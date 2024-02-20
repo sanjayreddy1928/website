@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "page1.html",
+    "href": "page1.html",
+    "title": "About Me",
+    "section": "",
+    "text": "About Me\nHey, this is Sanjay Reddy Marri and welcome to my website. I am pursuing Master’s in Data Analytics Engineering at George Mason University. I like listening to music and watching movies. My favorite sport is cricket and I have recently developed an interest in NFL too after coming to the US. This website is regarding the projects I have done in my career. Thank you for visiting."
+  },
+  {
+    "objectID": "page2.html",
+    "href": "page2.html",
+    "title": "Contact Info:",
+    "section": "",
+    "text": "Contact Info:\n📧 : sanjayreddy1928@gmail.com"
+  },
+  {
+    "objectID": "page3.html",
+    "href": "page3.html",
+    "title": "My Projects:",
+    "section": "",
+    "text": "My Projects:"
+  }
+]

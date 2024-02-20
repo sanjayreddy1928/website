@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  navbar:
+    left:
+       - text: "About Me"
+         href: page1.qmd
+       - text: "Contact Info"
+         href: page2.qmd
+       
+    right: 
+      - text: "My Projects"
+        href: page3.qmd
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
