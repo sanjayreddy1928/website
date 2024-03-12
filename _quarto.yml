@@ -13,6 +13,8 @@ website:
     right: 
       - text: "My Projects"
         href: page3.qmd
+      - text: Code
+        href: Code.qmd
 
 format:
   html:

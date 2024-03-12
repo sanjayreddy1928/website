@@ -1,0 +1,44 @@
+---
+title: "Code"
+---
+
+```{r}
+library(ggplot2)
+if (!require(plotly)) install.packages("plotly")
+library(plotly)
+
+player_data = data.frame(
+  Player = c("Clyde Walcott", "Steve Smith", "Ed Weekes", "Mohd Yousuf", "Virat Kohli", "Garry Sobers", "H Sutcliffe", "Brian Lara", "M Jayawardane", "CA Pujara", "K Sangakkara" ,"Don Bradman"),
+  Runs = c(2584, 3090, 2420, 3337, 3105, 4075, 2584, 6217, 7167, 3217, 6830, 4322),
+  Average = c(64, 62, 62, 60, 59, 57, 57, 56, 57, 58, 59, 90)
+)
+
+# First Redesign
+player_data = player_data[order(player_data$Average),]
+p = ggplot(player_data, aes(x = Player, y = Average, fill = Runs)) +
+  geom_bar(stat = "identity") +
+  coord_flip() + 
+  scale_fill_gradient(low = "lightblue", high = "blue") +
+  labs(title = "Weighted Batting Average vs Runs Scored at Home",
+       x = "Player", y = "Weighted Batting Average") +
+  theme_minimal()
+theme(legend.position = "bottom",
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      plot.title = element_text(hjust = 0.5))
+ggplotly(p)
+
+# Second Redesign
+p = ggplot(player_data, aes(x = Average, y = Runs, color = Player)) +
+  geom_point(size = 4) +
+  scale_y_continuous(limits = c(0, max(player_data$Runs) + 500)) + 
+  scale_color_discrete(name = "Player") +
+  labs(title = "Weighted Batting Average vs Runs Scored at Home",
+       x = "Weighted Batting Average",
+       y = "Runs Scored at Home") +
+  theme_minimal() +
+  theme(panel.grid.major = element_line(color = "gray", size = 0.5),  
+        panel.grid.minor = element_line(color = "gray", size = 0.25)) 
+p_interactive = ggplotly(p, tooltip = c("color", "x", "y"))
+p_interactive
+
+```

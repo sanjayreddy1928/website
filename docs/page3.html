@@ -90,6 +90,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./page3.html" rel="" target="" aria-current="page">
  <span class="menu-text">My Projects</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Code.html" rel="" target="">
+ <span class="menu-text">Code</span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools">
 </div>
@@ -106,7 +110,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#my-projects" id="toc-my-projects" class="nav-link active" data-scroll-target="#my-projects">My Projects:</a></li>
+  <li><a href="#my-projects" id="toc-my-projects" class="nav-link active" data-scroll-target="#my-projects">My Projects:</a>
+  <ul class="collapse">
+  <li><a href="#mid-project" id="toc-mid-project" class="nav-link" data-scroll-target="#mid-project">Mid Project</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview:</a></li>
+  <li><a href="#original-graph" id="toc-original-graph" class="nav-link" data-scroll-target="#original-graph">Original Graph:</a></li>
+  <li><a href="#redesigned-graph" id="toc-redesigned-graph" class="nav-link" data-scroll-target="#redesigned-graph"><strong>Redesigned Graph:</strong></a></li>
+  <li><a href="#first-redesign" id="toc-first-redesign" class="nav-link" data-scroll-target="#first-redesign">First Redesign:</a></li>
+  <li><a href="#second-redesign" id="toc-second-redesign" class="nav-link" data-scroll-target="#second-redesign"><strong>Second Redesign:</strong></a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion:</a>
+  <ul class="collapse">
+  <li><a href="#youtube-link" id="toc-youtube-link" class="nav-link" data-scroll-target="#youtube-link">Youtube link:</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><strong>References:</strong></a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -117,8 +136,71 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="my-projects" class="level1">
 <h1>My Projects:</h1>
+<section id="mid-project" class="level2">
+<h2 class="anchored" data-anchor-id="mid-project">Mid Project</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview:</h3>
+<p>The motivation for undertaking this project is based on the recognition that although the initial representation of data offers a fundamental understanding of its arrangement and potential consequences, there frequently exists a wide array of alternative viewpoints and stories that can be revealed through imaginative and contemplative reconfiguration.</p>
+<p>In the process of redesigning the chosen visualization, this project will critically evaluate the effectiveness of different design choices in conveying the intended message.</p>
+<p>Moreover, the project will explore the role of context in visualization design, considering how the intended audience and the medium of presentation can impact design decisions.</p>
+</section>
+<section id="original-graph" class="level3">
+<h3 class="anchored" data-anchor-id="original-graph">Original Graph:</h3>
+<p><img src="images/clipboard-1333314626.png" class="img-fluid" width="618"></p>
+<p>The graph titled “TOP HOME WEIGHTED BATTING AVERAGES” displays a number of cricket players with circles indicating their runs scored at home. The size of each circle corresponds to the number of runs scored, and the x-axis represents the weighted batting average at home. The graph is designed to compare players’ performances.</p>
+<p>Here are some potential issues with the graph:</p>
+<ol type="1">
+<li><p><strong>Circle Size Representation</strong>: It’s unclear whether the circle sizes are to scale with the runs scored. Without a key or scale for circle size, it’s difficult to interpret the exact differences in runs.</p></li>
+<li><p><strong>Axis Labeling and Scaling</strong>: The x-axis labels for the weighted batting averages could be more descriptive. Additionally, the x-axis does not start at zero, which might be by design to focus on the range of interest, but could potentially mislead by exaggerating differences.</p></li>
+<li><p><strong>Data Point Clarity</strong>: If the circles represent runs scored, then having them mapped to the batting averages might confuse viewers into thinking the average is related to the circle’s area.</p></li>
+<li><p><strong>Legend or Guide</strong>: There is no legend explaining the size of the circles, leaving the viewer to guess what different sizes represent.</p></li>
+</ol>
+</section>
+<section id="redesigned-graph" class="level3">
+<h3 class="anchored" data-anchor-id="redesigned-graph"><strong>Redesigned Graph:</strong></h3>
+</section>
+<section id="first-redesign" class="level3">
+<h3 class="anchored" data-anchor-id="first-redesign">First Redesign:</h3>
+<section id="bar-graph" class="level4">
+<h4 class="anchored" data-anchor-id="bar-graph">Bar Graph:</h4>
+<p><img src="images/clipboard-885681331.png" class="img-fluid"></p>
+<p><strong>Simplification and Clarity</strong>: The horizontal bar chart simplifies the comparison of weighted batting averages across players. By using a single metric per bar (the weighted batting average), the visualization directly communicates one aspect of player performance, reducing complexity.</p>
+<p><strong>Use of Color Gradient</strong>: To represent runs scored at home, the bar chart employs a color gradient ranging from light blue to blue.&nbsp;This specific aesthetic choice not only adds a visual dimension to the data but also facilitates an intuitive understanding of runs scored in relation to batting averages.&nbsp;Importantly, this is achieved without overcrowding the chart with multiple data points or elements.</p>
+<p><strong>Improved Readability</strong>: The readability of player names is improved by flipping the chart to a horizontal orientation.&nbsp;This adjustment also allows for better utilization of space, particularly when compared to the original graph where text overlap proved problematic.</p>
+<p><strong>Interactive Elements</strong>: By converting the static version of the chart to an interactive format using plotly, user engagement is further enhanced.This interactive feature enables a detailed exploration of the data through tooltips, thereby providing a more interactive and immersive experience.</p>
+</section>
+</section>
+<section id="second-redesign" class="level3">
+<h3 class="anchored" data-anchor-id="second-redesign"><strong>Second Redesign:</strong></h3>
+<section id="scatter-plot" class="level4">
+<h4 class="anchored" data-anchor-id="scatter-plot">Scatter Plot:</h4>
+<p><img src="images/clipboard-2754139538.png" class="img-fluid"></p>
+<p><strong>Direct Comparison of Two Metrics</strong>: The redesign of the scatter plot allows for a direct comparison between runs scored and batting averages, thus showcasing the relationship between these two significant metrics.&nbsp;Each player is represented by a point on the plot, positioned according to their performance statistics.</p>
+<p><strong>Color Coding by Player</strong>: Enhancing the distinction between players, assigning a unique color to each individual improves the ability to track and analyze individual performances across the plot.</p>
+<p><strong>Interactivity with Tooltips</strong>: The utilization of plotly for interactivity introduces tooltips that provide detailed information, such as the player’s name, batting average, and runs scored, when hovering over a data point.&nbsp;This addition effectively addresses the potential issue of overlapping labels and enhances the dynamic informativeness of the visualization.</p>
+<p><strong>Adjustable Y-Axis Scale</strong>: Setting the y-axis to start from 0 and extend beyond the maximum runs scored ensures that the data representation is proportionate and grounded, enhancing the plot’s interpretability.</p>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion:</h2>
+<p>The interpretability and readability of cricket player performance data are significantly enhanced by the redesigned visualizations in comparison to the original graph.&nbsp;The original graph’s shortcomings, such as text overlap and ambiguous data representation, are addressed by the new designs through the utilization of a horizontal bar chart and an interactive scatter plot.&nbsp;The intuitive color gradient of the horizontal bar chart effectively conveys runs scored at home, while the scatter plot allows for an interactive and detailed examination of the relationship between runs scored and batting averages.&nbsp;These enhancements not only simplify data interpretation but also contribute to an engaging user experience, ensuring that the insights are both accessible and compelling.</p>
+<section id="youtube-link" class="level3">
+<h3 class="anchored" data-anchor-id="youtube-link">Youtube link:</h3>
+<p>Here is a link to my youtube video explaining the project.</p>
+<p><a href="https://youtu.be/5vZ5ioE2Z1M" class="uri">https://youtu.be/5vZ5ioE2Z1M</a></p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references"><strong>References:</strong></h3>
+<p>Original Graph link:</p>
+<p>26, A. N. | F. (2019, February 26).&nbsp;<em>Home and away: Batsmen who travel well and those who don’t</em>. Cricinfo. https://www.thecricketmonthly.com/story/1175355/home-and-away–batsmen-who-travel-well-and-those-who-don-t&nbsp;</p>
+<p><a href="https://www.thecricketmonthly.com/story/1175355/home-and-away--batsmen-who-travel-well-and-those-who-don-t" class="uri">https://www.thecricketmonthly.com/story/1175355/home-and-away--batsmen-who-travel-well-and-those-who-don-t</a></p>
+<p><em>Videos</em>. Quarto. (n.d.). https://quarto.org/docs/authoring/videos.html&nbsp;</p>
+<p><a href="https://quarto.org/docs/authoring/videos.html" class="uri">https://quarto.org/docs/authoring/videos.html</a></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
